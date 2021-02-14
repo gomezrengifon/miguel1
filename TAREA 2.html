@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<center>
+<marquee  bgcolor="#264396" behavior="ALTERNATE" style="border:#000000 2px SOLID" loop=”10″ > <H1> JAVA SCRIPT </H1></marquee>
+	<link rel="stylesheet" href="style1.css">
+</head>
+<body background="5a3ff695c1efa2223b3974fafd2d4b3a.gif" style="background-size: cover">
+	
+<body>
+	<center>
+<form class="f1">
+		
+
+
+
+	<br>
+	<br>
+
+	<br>
+	<br>
+
+			<font color="white"><label>Por favor la letra 1 con mayuscula:</label></font>
+	<br>
+<br>
+<br>
+
+			<input type="tex" id="nombreone">
+<br>
+
+	<br><br>
+<br>
+
+			<input type="button" value="ENTER" onclick="ing();">
+
+
+	<br>
+	<br>
+
+
+
+
+	<form class="f2">
+
+		<font color="white"><label>Por favor la letra 1 con mayuscula:</label></font>
+
+	<br>
+	<br>
+
+	<br>
+	<br>
+
+
+		<input type="text" id="nombreing" >
+
+	<br><br>
+
+
+	<br>
+	<br>
+		<input type="button" value="delete" onclick="si();">
+
+
+	<br><br>
+
+
+
+	<br>
+	<br>
+
+		<input type="text" id="answer">
+
+
+	</form>
+
+
+
+	<script>
+
+var vector=["Claudia",];
+console.log(vector);
+
+var si=function()
+{
+var nu=0;
+var nombre=document.getElementById("nombreing").value;
+var ultimo=vector.length-1; 
+while(nu<vector.length)
+{
+		alert("SE BORRO CON EXITO");
+if(nombre==vector[nu])
+{
+var ult=vector[ultimo];
+		vector[ultimo]=vector[nu];
+		vector[nu]=ult;
+		vector.pop();
+	console.log(vector);
+		nu=vector.length;
+	document.getElementById("answer").value="BURNNNN";
+	document.getElementById("nombreing").value="";
+}
+		else
+{
+		nu=nu+1;
+			if (nombreing!=vector[nu])
+{
+				document.getElementById("answer").value=nombreing+"NO ESTA EN EL VECTOR";
+}
+}
+}
+}
+
+var ing=function()
+{
+	var nombreone=document.getElementById("nombreone").value;
+	vector.push(nombreone);
+	console.log(vector);
+	document.getElementById("nombreone").value="";
+
+	alert("SE INGRESO CON EXITO");
+}
+</script>
+</center>
+
+
+
+
+<a class="button" href="BASE TAREAS.html">Atras</a>
+
+</body>
+</html>
