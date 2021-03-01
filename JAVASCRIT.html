@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<center><marquee  bgcolor="#264396" behavior="ALTERNATE" style="border:#000000 2px SOLID" loop=”10″ > <font color="white"><H1> JAVA SCRIPT </H1></font></marquee>
+
+
+	<link rel="stylesheet" href="style1.css"></center>
+
+
+	<link rel="stylesheet" type="text/css" href="style3.css">
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
+
+
+	<meta charset="utf-8">
+</head>
+<body background="5a3ff695c1efa2223b3974fafd2d4b3a.gif" style="background-size: cover">
+	
+
+
+
+<script type="text/javascript" charset="utf-8">
+        $(document).keydown(function (tecla)
+         {
+            if (tecla.keyCode == 65)
+            {
+                document.getElementById('A').style.display="block";
+                document.getElementById('B').style.display="none";
+                document.getElementById('C').style.display="none";
+                document.getElementById('div').style.display="none";
+            }
+
+            if (tecla.keyCode == 66) 
+            {
+            	document.getElementById("B").style.display="block";
+            	document.getElementById('A').style.display="none";
+                document.getElementById('C').style.display="none";
+                document.getElementById('div').style.display="none";
+            }
+
+            if (tecla.keyCode == 67) 
+            {
+                document.getElementById('C').style.display="block";
+                document.getElementById('A').style.display="none";
+                document.getElementById('B').style.display="none";  
+                document.getElementById('div').style.display="none";
+            }
+        });
+      </script> 
+<body>
+	<center>
+
+            <div class="div">
+			<script type="text/javascript">
+				function LOL() 
+				{
+					var LOL;
+					var opcion = prompt("¿QUE QUIERE DECIR?", "");
+
+					if(opcion == null || opcion == "")
+					{
+						LOL = "¿QUE QUIERE DECIR?"; 
+					}
+					else 
+					{
+						LOL = opcion;
+						alert(" A B C ");
+					}
+					document.getElementById("div").innerHTML = LOL;
+					document.getElementById("A").innerHTML = LOL;
+					document.getElementById("B").innerHTML = LOL;
+					document.getElementById("C").innerHTML = LOL;
+				}
+			</script>
+		</div>
+		<div id="div" class="TIENE">
+		</div>
+
+		<div class="A" id="A">
+		</div>
+
+		<div class="B"id="B">
+		</div>
+		
+		<div class="C"id="C">
+		</div>
+
+			<center>
+		<br><br><br>
+			<br><br>
+		<br><br>
+		<br><br>
+
+		<input type="button" value="FRASE" class="btn" onclick="LOL()">
+</center>
+		<br><br><br><br>
+		<br><br>
+		<br><br><br><br>
+		<br><br><br>
+		</center>
+	<a class="button" href="BASE TAREAS.html">Atras</a>
+</body>
+</html>
